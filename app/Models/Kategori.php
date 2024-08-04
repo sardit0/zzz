@@ -10,8 +10,6 @@ class Kategori extends Model
     use HasFactory;
     protected $table = 'kategoris'; 
 
-
-
     public function film()
     {
         return $this->hasMany(Film::class, 'id_kategoris');
